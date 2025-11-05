@@ -180,6 +180,13 @@ footer .container {
   overflow-y: auto;
 }
 
+.mobile-menu address {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 48px;
+}
+
+
 .mobile-menu.is-open {
   display: flex;
 }
@@ -200,7 +207,7 @@ footer .container {
 }
 
 /* Navigation - Hidden on Mobile, shown in hamburger menu */
-nav {
+.original-nav {
   display: none;
 }
 
@@ -209,7 +216,6 @@ nav {
   flex-direction: column;
   gap: 40px;
   padding: 0;
-  margin: 0 0 auto 0;
 }
 
 .page-nav .link {
@@ -227,7 +233,7 @@ nav {
 }
 
 /* Address - Hidden on Mobile, shown in hamburger menu */
-address {
+.original-address {
   display: none;
   font-style: normal;
   margin-top: auto;
@@ -238,7 +244,7 @@ address {
   flex-direction: column;
   gap: 24px;
   padding: 0;
-  margin: 0 0 48px 0;
+  margin: 0;
 }
 
 .address-nav .link {
@@ -804,7 +810,7 @@ footer p {
 
 .footer-icon {
   display: flex;
-  gap: 16px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -841,7 +847,7 @@ footer p {
 .input-mail {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 100%;
+  min-width: 264px;
   height: 40px;
   background-color: transparent;
   color: #fff;
@@ -910,7 +916,7 @@ footer p {
   }
 
   /* Navigation visible on tablet */
-  nav {
+  .original-nav {
     display: block;
   }
 
@@ -948,7 +954,7 @@ footer p {
   }
 
   /* Address visible on tablet */
-  address {
+  .original-address {
     display: block;
     margin-left: auto;
   }
@@ -1064,8 +1070,10 @@ footer p {
   }
 
   .footer-icon {
-    justify-content: flex-start;
-  }
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
 
   .form-section {
     width: 100%;
