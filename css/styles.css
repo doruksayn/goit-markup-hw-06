@@ -312,10 +312,10 @@ address {
 /* Modal */
 .backdrop {
   position: fixed;
-  top: 10;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 125%;
+  height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   display: none;
   justify-content: center;
@@ -342,6 +342,8 @@ address {
   position: relative;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  padding: 72px 16px 0 16px;
+    
 }
 
 .modal-close {
@@ -650,7 +652,7 @@ li p {
 
 .icon-social:hover,
 .icon-social:focus {
-  --color4: #404bbf;
+  --color4: #31d0aa;
 }
 
 /* Portfolio Section - Mobile */
@@ -675,6 +677,25 @@ li p {
   gap: 48px;
   padding: 0;
   margin: 0;
+}
+
+.portfolio h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.portfolio p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 .portfolio-card {
@@ -702,6 +723,16 @@ li p {
   display: block;
 }
 
+.portfolio-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -719,38 +750,12 @@ li p {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: white;
   margin: 0;
 }
 
-.portfolio-card:hover .overlay {
-  transform: translateY(0);
-}
 
-.portfolio-info {
-  padding: 32px 16px;
-  border: 1px solid var(--cornflower);
-  border-top: none;
-}
 
-.portfolio h3 {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.portfolio p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: var(--slate);
-}
 
 /* Footer - Mobile */
 footer {
