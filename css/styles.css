@@ -262,19 +262,24 @@ footer .container {
 
 /* Hero Section - Mobile */
 .hero {
+  position: relative;
   padding: 72px 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/people-office.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(46, 47, 66, 0.7);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero h1 {
